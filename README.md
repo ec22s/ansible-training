@@ -1,3 +1,21 @@
+- forked from https://github.com/Shoma-progr-0210/ansible-training
+
+- fork元の解説 https://qiita.com/Shoma0210/items/7d7d24d7c3f95f19b427
+
+- 0714f49 2025年11月11日時点で動くよう若干修正しました
+
+- 動作確認環境
+
+  - macOS Sequoia 15.6
+  
+  - GNU bash, version 5.3.3(1)-release (x86_64-apple-darwin23.6.0)
+  
+  - Docker version 28.5.1, build e180ab8ab8
+
+- 以下, fork元のREADMEです
+
+---
+
 # Ansible on CentOS7
 
 ## コンテナ構築
