@@ -1,8 +1,14 @@
 - forked from https://github.com/Shoma-progr-0210/ansible-training
 
-- fork元の解説 https://qiita.com/Shoma0210/items/7d7d24d7c3f95f19b427
+- fork元の解説記事 https://qiita.com/Shoma0210/items/7d7d24d7c3f95f19b427
 
-- 0714f49 2025年11月11日時点で動くよう若干修正しました
+- [0714f49](https://github.com/ec22s/ansible-training/commit/0714f49d8c1662648c97b4b307d075c8414443ec) 2025年11月11日時点で動くよう若干修正しました
+
+  - nodeコンテナのOSをCentOS8にアップデート
+
+  - yumのリポジトリを更新
+ 
+  - 解説記事と同様にApache初回起動でエラーになるようDockerfileを修正
 
 - 動作確認環境
 
@@ -94,3 +100,4 @@ $ ansible-playbook playbook.yml
 ターゲットノードで httpd が正常に動作しているかをブラウザで確認してください。
 
 node0x: http://localhost:808x
+
