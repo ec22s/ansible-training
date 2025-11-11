@@ -1,10 +1,12 @@
-# CentOS7
-FROM centos:7
+# CentOS8
+FROM centos:8
+
+# Use vault repositories
+RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-* && \
+    sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
 
 # install ssh server
 RUN yum -y install openssh-server && yum clean all
-# install sudo
-RUN yum -y install sudo
 
 # create Public key
 RUN ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
